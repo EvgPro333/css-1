@@ -1,0 +1,184 @@
+/* Урок 1  */
+/* Завдання 1. HTML документ-root */
+:root {
+	background: #ffffff;
+}
+
+/* Завдання 2. всі елементи на сторінці-* */
+* {
+	color: rgb(0, 0, 0);
+}
+
+/* Завдання 3. тег-h1 */
+h1 {
+color: blue;
+}
+
+/* Завдання 4. клас green */
+.green {
+	color: green;
+}
+
+/* Завдання 5. елемент з індинтифікатором blue */
+#blue {
+	color: blue;
+}
+
+/* Завдання 6. тег p тег div */
+.box>p {
+	background: red;
+}
+.box>div {
+	background: green;
+}
+
+/* Завдання 7. клас brown */
+.brown {
+	color:hsl(0, 0%, 100%);
+	background:brown;
+}
+
+/* Завдання 8. дочірніх елементів тега ul */
+ul>li {
+	background:red;
+}
+
+/* Завдання 9. теги, які є сестринськими відносно тега button з класом header-button */
+.header-button+span {
+	background:red;
+}
+
+/* Завдання 10. cусідські теги */
+.susid~p {
+	background:blue;
+}
+
+/* Завдання 11. класу .salo та індетифікатора #bread */
+.salo, #bread {
+	background:yellow;
+}
+
+/* Урок 2  */
+/* Завдання 1. перший елемент списку-:first-child */
+.first-task>ul>li:first-child {
+	color: white;
+}
+
+/* Завдання 2. перший елемент списку в першому блоці ul - :first-child */
+.second-task>ul:first-child>li:first-child {
+	color: yellow;
+}
+
+/* Завдання 3. перший елемент списку в другому блоці ul - :first-child */
+.third-task>ul:nth-child(2)>li:first-child {
+	background: yellow;
+}
+
+/* Завдання 4. останній елемент списку -:last-child */
+.four-task>ul>li:last-child {
+	background: yellow;
+}
+
+/* Завдання 5. останній елемент списку в останньому блоці ul -:last-child */
+.five-task>ul:last-child>li:last-child {
+	color: white;
+}
+
+/* Завдання 6. єдині в своєму батьківському елементі - :only-child */
+.only-child-task>div:only-child {
+	color: red;
+}
+
+/* Завдання 7. перший абзац в div з классом seven-task - :first-of-type */
+.seven-task>p:first-of-type {
+	background: red;
+}
+
+/* Завдання 8. останній абзац в div з классом eight-task - :last-of-type */
+.eight-task>p:last-of-type {
+	background: red;
+}
+
+/* Завдання 9. <p> елементів, якщо в батьківському елементі більше не має <p> - :only-of-type */
+.nine-task>.text-wrapper>p:only-of-type {
+	background: yellow;
+}
+
+/* Урок 3  */
+/* Завдання 1. селектор назви атрибута*/
+.lesson-three-task-one>nav>ul>li>[href] {
+	color:white;
+}
+
+/* Завдання 2. селектор назви атрибута*/
+.lesson-three-task-two>[value] {
+	color:yellow;
+}
+
+/* Завдання 3. селектор значення атрибута*/
+.lesson-three-task-three>[value="3"] {
+	background:red;
+}
+
+/* Завдання 4. селектор наявності*/
+.lesson-three-task-four>[class~="primary"] {
+	background:blue;
+}
+
+/* Завдання 5. починаються зі слова*/
+.lesson-three-task-five>[class|="secondary"] {
+	background:red;
+}
+
+/* Завдання 6. cелектор початку*/
+.lesson-three-task-six>ul>[class^="b"] {
+	background:white;
+	color:green;
+}
+
+/* Завдання 7. селектор кореня*/
+.lesson-three-task-seven>ul>[class*="on"] {
+	background:white;
+	color:green;
+}
+
+/* Завдання 8. селектор кінцівки*/
+.lesson-three-task-eight>ul>li>[class$="s"] {
+	background:white;
+	color:blue;
+}
+
+/* Завдання 9. першу букву (літери)*/
+.lesson-three-task-nine>h2::first-letter {
+	color:red;
+}
+
+/* Завдання 10. першому рядку*/
+.lesson-three-task-ten>p::first-line {
+	background:yellow;
+}
+
+/* Завдання 11. плейсхолдер*/
+.lesson-three-task-eleven>::placeholder {
+	background:red;
+}
+
+/* Завдання 12. ”попереду”before*/
+.lesson-three-task-twelve>ul>li::before {
+	content:"➤";
+}
+
+/* Завдання 13. ”після”after*/
+.lesson-three-task-thirteen>ul>li::after {
+	content:"➤";
+}
+
+
+
+
+
+
+
+
+
+
